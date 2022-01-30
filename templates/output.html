@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="static/style.css"/>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"> 
+  <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3hybE6Sku91eKuffSmigIYcxovClM9sE&callback=initMap&libraries=&v=weekly"
+  async
+></script>
+<style type="text/css">
+  #map {
+        height: 300px;
+        width: 70%;
+      }
+</style>
+  <body>
+
+  <div id="logo">
+      <img src="static/skins/logo.png" height=180px>
+  </div>
+    <div class="container1">
+      <div class="outputCard">
+
+        <div class="Content_here">
+          <div class="Left">
+            <label class="DiseaseName">{{dis}}</label>
+            <p class="labels">Information:</p>
+            <div class="disbox">
+              <!-- <label class="DiseaseDescName">{{dis}}</label> -->
+              <p class="DiseaseDescParagraph">{{about}}</p>
+            </div>
+            <p class="labels">Precautionary Measures:</p>
+            <ul class="precbox">
+              <li class="PossiblePrecaution"> {{p1}}</li>
+              <li class="PossiblePrecaution"> {{p2}}</li> 
+              <li class="PossiblePrecaution"> {{p3}}</li> 
+            </ul>
+            
+          </div>
+          <div class="Right">
+            <p class="labels">Suggested Medication:</p>
+            <label class="PossibleMeds"> {{meds}}</label>
+            <label class="Hospitals">
+              Nearest speciality hospital in your area:
+            </label>
+            <div class="precbox" id="map">
+              <!-- <li class="HospitalOption">{{h1}}</li>; 
+              <li class="HospitalOption">{{h2}}</li>; 
+              <li class="HospitalOption">{{h3}}</li>;  -->
+3
+              <!-- {% for list_value in hosps %}
+               <li class="HospitalOption">{{ list_value }}</li> 
+              {% endfor %} -->
+              <script>
+                
+                function initMap() {
+                  
+                  const p1 = { lat: {{la1}}, lng: {{lo1}} };
+                  const p2={lat:{{la2}},lng:{{lo2}}};
+                  const p3={lat:{{la3}},lng:{{lo3}}};
+                  
+                  const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 11,
+                    center: p1,
+                  });
+                  
+                  const marker1 = new google.maps.Marker({
+                    icon :'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                    position: p1,
+                    map: map,
+                  });
+                  const marker2 = new google.maps.Marker({
+                    icon :'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                    position: p2,
+                    map: map,
+                  });
+                  const marker3 = new google.maps.Marker({
+                    icon :'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
+                    position: p3,
+                    map: map,
+                  });
+                }
+              </script>
+
+    
+            </div class="disbox">
+            <ul class="precbox">
+              <li style="color:blue">{{n1}}   {{r1}}</li>
+              <li style="color:green">{{n2}}   {{r2}}</li>
+              <li style="color:red">{{n3}}   {{r3}}</li>
+            </ul>
+              
+            </div>
+
+        </div>
+        <a href="/"> <input type="button" value="Go Back" class="GoBackButton" /></a>
+      </div>
+    </div>
+  <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d51f382fb8c4b22',m:'M2dFoqnbPz9LscZwMgP3EHqzFSA4VuCLFEMRyrCuj7Y-1643453968-0-AUClfaY0rt7I5/Ct7CTbQrPHj5UJn8Sd8G66behn29F8/Jjlx/QgktbFAZoGXPPlDehc9V6nxaQbBATn7HVAvzVQDygFirmmKxlALSWIWu0Pn3YJMxPj9HZOj4WACYaJ+PEfiF+cDx7EQyJ78dTvkDwlZx8F0Yj+4KAvicHiWgA8/YXson9C8TwBT4L6dCskVA==',s:[0xb8b0ac9549,0x357b202948],}})();</script></body>
+
+</html>

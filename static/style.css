@@ -1,0 +1,251 @@
+
+
+html * {
+  font-size: 16px;
+  line-height: 1.625;
+  font-family: 'Jost', sans-serif;
+}
+body {
+  text-align: center;
+  background-image: url("https://wallpaperbat.com/img/437364-medicine-wallpaper-top-free-medicine-background.jpg");
+  height: 100vh;
+  background-size: cover;
+  /* font-family: 'Jost', sans-serif;   */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* height: 60vh; */
+  width: 40vw;
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+  place-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 50px -20px rgb(67, 255, 224, 0.8);
+  background: linear-gradient(
+    0.25turn,
+    rgba(181, 217, 226, 0.5),
+    rgba(178, 255, 255, 0.7)
+  );
+}
+.InputCard {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+.Title {
+  font-size: xx-large;
+  top: 2%;
+}
+.Symptom_Label {
+  font-size: x-large;
+  margin-right: 2.5vw;
+  /* background-color: bisque; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.SymptomInputDiv {
+  margin: 30px;
+  display: flex;    
+}
+.Symptom_Input {
+  height: 35px;
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid;
+  outline: none;
+  flex:1;
+  /* position: absolute; */
+  padding-left: 10px;
+  border-radius: 50px;
+  border-color: rgba(37, 110, 143);
+}
+
+.SubmitButton {
+  height: 40px;
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid;
+  outline: none;
+  margin-top: 50px;
+  border-radius: 50px;
+  font-size: large;
+  border-color: rgba(37, 110, 143);
+}
+input.SubmitButton:hover {
+  background: linear-gradient(rgba(24, 159, 204, 0.5), #b2ffff);
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  border-radius: 50px;
+  /* border-color: white; */
+  border-color: aquamarine;
+}
+input.Symptom_Input:focus {
+  background: linear-gradient(rgba(24, 159, 204, 0.5), #b2ffff);
+  border-color: rgba(0, 0, 0, 0);
+  border: 3px solid;
+  outline: none;
+  border-color: rgba(37, 110, 143);
+}
+
+.container1 {
+  
+  display: flex;
+  flex-direction: column;
+  /* height: 70vh; */
+  width: 70vw;
+  position: absolute;
+  top: 15vh;
+  left: 15vw;
+  place-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background: linear-gradient(
+    0.25turn,
+    rgba(181, 217, 226, 0.5),
+    rgba(178, 255, 255, 0.7)
+  );
+}
+.Left {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aquamarine; */
+  width: 35vw;
+  /* height: 45vh; */
+  place-content: center;
+  align-items: center;
+}
+.Right {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #b2ffff; */
+  width: 35vw;
+  place-content: center;
+  align-items: center;
+  /* height: 45vh; */
+}
+.outputCard {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+.Content_here {
+  display: flex;
+  font-size: "25px";
+}
+.GoBackButton {
+  height: 40px;
+  width: 270px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid;
+  outline: none;
+  margin-top: 30px;
+  border-radius: 50px;
+  font-size: large;
+  border-color: rgba(37, 110, 143);
+}
+input.GoBackButton:hover {
+  background: linear-gradient(rgba(24, 159, 204, 0.5), #b2ffff);
+  border: none;
+  outline: none;
+
+  /* border-color: white; */
+  border-color: aquamarine;
+}
+.DiseaseName {
+  font-size: 36px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+}
+.PossiblePrecaution {
+  padding: 5px;
+  font-size: 20px;
+}
+.PossibleMeds {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.DiseaseDescName {
+  padding: 10px;
+  font-weight: bold;
+}
+.DiseaseDescParagraph {
+  padding: 10px;
+  font-size: 20px;
+}
+.Hospitals {
+  padding: 10px;
+  width: 70%;
+  font-size: 20px;
+}
+.HospitalOption {
+  padding: 5px;
+  font-size: 20px;
+}
+.labels {
+  font-size: 20px;
+}
+
+.precbox {
+  font-size: "20px";
+  display: "grid";
+  grid-column: "1";
+  padding: 10px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  list-style:none;
+}
+.disbox {
+  place-content: "center";
+  align-items: "center";
+  display: "flex";
+  flex-direction: "column";
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#logo{
+  /* position: absolute;
+  top:50%;
+  left:50%; */
+}
+.ui-menu-item
+{
+  width: 200px;
+  color: black;
+  padding: 2px;
+  background-color: rgba(255,255,255, 0.5);
+  border-radius: 10px;
+  margin-bottom: 1px;;
+}
+.ui-helper-hidden-accessible{
+  display: none;
+}
+ul {
+  list-style-type: none;
+}
+

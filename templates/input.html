@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <title>Document</title>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<style>
+    .SymptomInputDiv{
+        font-family: 'Jost', sans-serif;
+        font-weight: bold;
+        color: white;
+
+    }
+    .Symptom_Input{
+        font-family: 'Jost', sans-serif;
+        font-size:20px;
+        text-align: left;
+        color: orangered;
+         /* #042d53; */
+    }
+</style>
+
+<script>
+    $( function() {
+        $(document).tooltip();
+    var s1 = [
+        'itching',
+        'skin_rash',
+        'continuous_sneezing',
+        'shivering',
+        'stomach_pain',
+        'acidity',
+        'vomiting',
+        'indigestion',
+        'muscle_wasting',
+        'patches_in_throat',
+        'fatigue',
+        'weight_loss',
+        'sunken_eyes',
+        'cough',
+        'headache',
+        'chest_pain',
+        'back_pain',
+        'weakness_in_limbs',
+        'chills',
+        'joint_pain',
+        'yellowish_skin',
+        'constipation',
+        'pain_during_bowel_movements',
+        'breathlessness',
+        'cramps',
+        'weight_gain',
+        'mood_swings',
+        'neck_pain',
+        'muscle_weakness',
+        'stiff_neck',
+        'pus_filled_pimples',
+        'burning_micturition',
+        'bladder_discomfort',
+        'high_fever'
+    ];
+
+    var s2=[
+        'skin_rash',
+        'nodal_skin_eruptions',
+        'shivering',
+        'chills',
+        'acidity',
+        'ulcers_on_tongue',
+        'vomiting',
+        'yellowish_skin',
+        'stomach_pain',
+        'loss_of_appetite',
+        'indigestion',
+        'patches_in_throat',
+        'high_fever',
+        'weight_loss',
+        'restlessness',
+        'sunken_eyes',
+        'dehydration',
+        'cough',
+        'chest_pain',
+        'dizziness',
+        'headache',
+        'weakness_in_limbs',
+        'neck_pain',
+        'weakness_of_one_body_side',
+        'fatigue',
+        'joint_pain',
+        'lethargy',
+        'nausea',
+        'abdominal_pain',
+        'pain_during_bowel_movements',
+        'pain_in_anal_region',
+        'breathlessness',
+        'sweating',
+        'cramps',
+        'bruising',
+        'weight_gain',
+        'cold_hands_and_feets',
+        'mood_swings',
+        'anxiety',
+        'knee_pain',
+        'stiff_neck',
+        'swelling_joints',
+        'pus_filled_pimples',
+        'blackheads',
+        'bladder_discomfort',
+        'foul_smell_ofurine',
+        'skin_peeling',
+        'blister'
+    ];
+
+    var s3=[
+        'nodal_skin_eruptions',
+        'dischromic_patches',
+        'chills',
+        'watering_from_eyes',
+        'ulcers_on_tongue',
+        'vomiting',
+        'yellowish_skin',
+        'nausea',
+        'stomach_pain',
+        'burning_micturition',
+        'abdominal_pain',
+        'loss_of_appetite',
+        'high_fever',
+        'extra_marital_contacts',
+        'restlessness',
+        'lethargy',
+        'dehydration',
+        'diarrhoea',
+        'breathlessness',
+        'dizziness',
+        'loss_of_balance',
+        'headache',
+        'blurred_and_distorted_vision',
+        'neck_pain',
+        'weakness_of_one_body_side',
+        'altered_sensorium',
+        'fatigue',
+        'weight_loss',
+        'sweating',
+        'joint_pain',
+        'dark_urine',
+        'swelling_of_stomach',
+        'cough',
+        'pain_in_anal_region',
+        'bloody_stool',
+        'chest_pain',
+        'bruising',
+        'obesity',
+        'cold_hands_and_feets',
+        'mood_swings',
+        'anxiety',
+        'knee_pain',
+        'hip_joint_pain',
+        'swelling_joints',
+        'movement_stiffness',
+        'spinning_movements',
+        'blackheads',
+        'scurring',
+        'foul_smell_ofurine',
+        'continuous_feel_of_urine',
+        'skin_peeling',
+        'silver_like_dusting',
+        'blister',
+        'red_sore_around_nose'
+    ];
+    $( "#Symptom1" ).autocomplete({
+      source: s1
+    });
+    $( "#Symptom2" ).autocomplete({
+      source: s2
+    });
+    $( "#Symptom3" ).autocomplete({
+      source: s3
+    });
+  } );
+  </script>
+</script>
+<body>
+    <div class="container">
+        <form method="POST" action="/output">
+            <img src="static/skins/form-logo.png" height=180px id="logo">
+            <div class="SymptomInputDiv">
+                <label class="Symptom_Label"> Enter Symptom 1</label>
+                <input type="text" class="Symptom_Input" name="Symptom1" id="Symptom1"/>
+            </div>
+            <div class="SymptomInputDiv">
+                <label class="Symptom_Label"> Enter Symptom 2</label>
+                <input type="text" class="Symptom_Input" name="Symptom2" id="Symptom2" />
+            </div>
+            <div class="SymptomInputDiv">
+                <strong><label class="Symptom_Label"> Enter Symptom 3</label></strong>
+                <input type="text" class="Symptom_Input" name="Symptom3" id="Symptom3" />
+            </div>
+
+            <input type="submit" value="Submit" class="SubmitButton" />
+        </form>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d51e51d1c4d4af9',m:'pAbaPrh.qC9s81kHuc7Oh_9VWWrOV2ksW6oZsUg9.cg-1643453378-0-AR1Z+jGpWOnbHYp9RxXnQPMA4kyRxx5fB3GmZcg6caGclae12tAW7JYyDLTcMbB1mJWSCGMqrCBI+G16VC1QJPSHS1ltP2EKTaFbcCMYZAq/Cx+wlthaNE02S2GguzUv2rfmePyhwU0xiSnhMYRcc00PU/UFOcE2UDvINbBZRTzybmYtXa/zUxD4yziLA2LPrg==',s:[0xf4eb34a970,0x9bc64f9841],}})();</script></body>
+
+</html>
