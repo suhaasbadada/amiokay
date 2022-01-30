@@ -144,12 +144,12 @@ dic3={'nodal_skin_eruptions': 35,
  'red_sore_around_nose': 38}
 
 
-d1=pd.read_csv('/home/vyper/Documents/amiokay/metadata/data.csv')
-d2=pd.read_csv('/home/vyper/Documents/amiokay/metadata/Symptom-severity.csv')
-d3=pd.read_csv('/home/vyper/Documents/amiokay/metadata/sym-desc.csv')
-d4=pd.read_csv('/home/vyper/Documents/amiokay/metadata/sym-prec.csv')    
-d5=pd.read_csv('/home/vyper/Documents/amiokay/metadata/medicine.csv')
-dn=pd.read_csv('/home/vyper/Documents/amiokay/metadata/dataset.csv')
+d1=pd.read_csv('metadata/data.csv')
+d2=pd.read_csv('metadata/Symptom-severity.csv')
+d3=pd.read_csv('metadata/sym-desc.csv')
+d4=pd.read_csv('metadata/sym-prec.csv')    
+d5=pd.read_csv('metadata/medicine.csv')
+dn=pd.read_csv('metadata/dataset.csv')
 model_knn=pickle.load(open('/home/vyper/Documents/amiokay/metadata/knn_model.pkl','rb'))
 lencoder=LabelEncoder()
 encoded_y = lencoder.fit_transform(dn['Disease'])
