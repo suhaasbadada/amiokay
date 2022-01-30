@@ -1,0 +1,42 @@
+,Disease,Medicine1,Medicine2,Medicine3
+0,Drug Reaction,Cetirizine (Zyrtec),fexofenadine (Allegra),
+1,Malaria,Chloroquine Phosphate,Quinine Sulphate,Primaquine Phosphate
+2,Allergy,Cetirizine,Desloratadine,Loratadine
+3,Hypothyroidism,Levothroxine,,
+4,Psoriasis,Vitamin A derivative,Anti-inflammatory,Immunosuppressive drug
+5,GERD,Antacid,Proton-pump inhibitor,Antidiarrhoel
+6,Chronic cholestasis,Amoxicillin,Advil,Minocine
+7,hepatitis A,Acetaminophin,Hepatitis Immuno Globulin,
+8,Osteoarthristis,Acetaminophin,Nonsteriodal anti-inflammatory drugs,Duloxetine
+9,(vertigo) Paroymsal  Positional Vertigo,Epley maneuver,,
+10,Hypoglycemia,Glucagon,,
+11,Acne,Apply Apple Cider Vinegar,Zinc Supplements,
+12,Diabetes,Insulin,Statin,Anticoagulant
+13,Impetigo,Penicilin,Antibiotics,
+14,Hypertension,ACE inhibitor,Diuretic,Vasodilator
+15,Peptic ulcer disease,Antibiotics,Antidiarrhoel,Penicillin
+16,Dimorphic hemorrhoids(piles),Proctofoam-HC Foam,Hydrocortisone Cream,Caladryl Lotion
+17,Common Cold,Analgesic,Antihistamine,Decongestant
+18,Chicken pox,Analgesic,Antihistamine,
+19,Cervical spondylosis,Nonsteroidal anti-inflammatory drugs,Corticosteriods,Muscle Relaxants
+20,Hyperthyroidism,Radioactive iodine,methimazole (Tapazole)/propylithiouracil,
+21,Urinary tract infection,Antibiotics,Penicillin,
+22,Varicose veins,Laser Therapy,Sclerotherapy,
+23,AIDS,antiretroviral regimens (ARVs),HIV antiviral,
+24,Paralysis (brain hemorrhage),Craniotomy,Physical Therapy,
+25,Typhoid,ciprofloxacin,ceftriaxone,
+26,Hepatitis B,entecavir (Baraclude),tenofovir (Viread),
+27,Fungal infection,clotrimazole,econazole,
+28,Hepatitis C,Simeprevir,sofosbuvir,Ribavarin
+29,Migraine,sumatriptan (Imitrex),rizatriptan (Maxalt),
+30,Bronchial Asthma,simeprevir,sofosbuvir,
+31,Alcoholic hepatitis,Visit doctor immediately,,
+32,Jaundice,Visit doctor immediately,,
+33,Hepatitis E,Ribavarin,Pegylated interferon alfa,
+34,Dengue,Visit doctor immediately,,
+35,Hepatitis D,Pegylated interferon alfa,,
+36,Heart attack,Aspirin,Nitroglycerin,Beta Blockers
+37,Pneumonia,Macrolides,Oral antibiotics,
+38,Arthritis,Hydrotherapy,Surgery,
+39,Gastroenteritis,Imodium,,
+40,Tuberculosis,Oral rehydration drinks,,
