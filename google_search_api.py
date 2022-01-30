@@ -7,6 +7,7 @@ url = "https://maps.googleapis.com/maps/api/place/textsearch/json?"
 
 
 def treatment_near_me(query):
+	query+='treatment+near+me'
 	r = requests.get(url + 'query=' + query + '&key=' + api_key)
 	x = r.json()
 	y = x['results']
